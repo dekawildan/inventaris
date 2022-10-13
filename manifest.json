@@ -1,0 +1,41 @@
+{
+    "name": "Aplikasi Skorsing Siswa",
+    "short_name": "Aplikasi Skorsing",
+    "description": "Aplikasi Skorsing Siswa by dekabhinus@gmail.com",
+    "icons": [
+      {
+        "src": "img/logorpl32.png",
+        "sizes": "32x32",
+        "type": "image/png",
+        "purpose": "any maskable"
+      },
+      {
+        "src": "img/logorpl192.png",
+        "sizes": "192x192",
+        "type": "image/png",
+        "purpose": "any maskable"
+      },
+      {
+          "src": "img/logorpl.png",
+          "sizes": "256x256",
+          "type": "image/png",
+          "purpose": "any maskable"
+      },
+      {
+          "src": "img/logorpl384.png",
+          "sizes": "384x384",
+          "type": "image/png",
+          "purpose": "any maskable"
+      },
+      {
+          "src": "img/logorpl.png",
+          "sizes": "512x512",
+          "type": "image/png",
+          "purpose": "any maskable"
+      }
+    ],
+    "start_url": "/skorsing/",
+    "display": "fullscreen",
+    "theme_color": "#f45",
+    "background_color": "#fff"
+}
