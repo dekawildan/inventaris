@@ -2,7 +2,7 @@ body {
     margin: 0;
     padding: 0;
 }
-h3 {
+/*h3 {
     font-size:x-large !important;
     font-family: 'Times New Roman', Times, serif !important;
 }
@@ -10,17 +10,19 @@ h4 {
     font-family: 'Times New Roman', Times, serif !important;
     font-size: large !important;
 }
+*/
 .header1 {
     width: 19.9%;
     height: 50px !important;
     padding:0 !important;
     margin: 0 !important;
     float: left;
-    background-color: rgb(55, 107, 156);
+    background-color: rgb(72, 3, 3);
     color: rgb(213, 213, 219);
+    text-align: center;
 }
-.header1 h3 {
-    margin-top: 10px !important;
+.header1 img {
+    margin: 1px 0 !important;
 }
 .header2 {
     width: 80%;
@@ -28,27 +30,31 @@ h4 {
     padding: 0 !important;
     margin: 0 !important;
     float: left;
-    background-color: rgb(55, 107, 156);
+    background-color: rgb(72, 3, 3);
     color: rgb(225, 228, 228);
     text-align: center;
     text-shadow: 3px 3px 3px grey;
-    border-left: 1px solid rgb(66, 112, 155);
+    border-left: 1px solid rgb(72, 3, 3);
 }
 .header2 h3 {
     float: left;
     margin-left: 30% !important;
     margin-right: 10% !important;
     margin-top: 10px !important;
+    font-family: 'Times New Roman', Times, serif !important;
+    font-size: x-large;
 }
 .header2 h4 {
     margin-top: 15px !important;
+    font-family: 'Times New Roman', Times, serif !important;
+    font-size: large;
 }
 .header2 .user {
     float: right;
     margin: 0 1% 0 0;
 }
 .header2 .ham {
-    background-color: rgb(55, 107, 156);
+    background-color: rgb(72, 3, 3);
     border: 1px solid rgb(42, 114, 197);
     border-radius: 3px;
     -webkit-border-radius: 3px;
@@ -63,7 +69,7 @@ h4 {
 .header2 .ham .burger {
     width: 22px;
     height: 3px;
-    background-color: lightsteelblue;
+    background-color: rgb(41, 43, 46);
     float: left;
     padding: 0;
     margin: 1px;
@@ -79,17 +85,18 @@ aside {
     float: left;
     background-color: rgb(42, 43, 43);
     height: 100vh;
+    overflow:auto !important;
 }
-ul {
+aside ul {
     margin: 0;
     padding: 10px 10px 0 10px;
 }
-ul li {
+aside ul li {
     list-style: none;
     margin: 0;
     padding: 0;
 }
-ul li a {
+aside ul li a {
     text-decoration: none;
     padding-top: 30px;
     padding-bottom: 10px;
@@ -101,7 +108,7 @@ ul li a {
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     font-size: 12pt;
 }
-ul li a:hover {
+aside ul li a:hover {
     background-color: rgb(90, 91, 92);
 }
 .aktif {
@@ -116,7 +123,7 @@ article {
     background-color: rgb(229, 232, 233);
     overflow: scroll;
 }
-section {
+article section {
     margin: 3% 2% 5% 2%;
     padding: 10px;
     border-radius: 5px;
@@ -130,18 +137,7 @@ section {
     background-color: rgb(244, 244, 245);
     border: 0;
 }
-footer {
-    width: 100%;
-    padding: 0;
-    margin: 0;
-    float: left;
-    background-color: rgb(45, 90, 128);
-    color: thistle;
-}
-footer p {
-    margin-top: 5px;
-}
-section .petugas {
+article section .petugas {
     width: 30%;
     height: auto;
     padding: 15px;
@@ -150,7 +146,10 @@ section .petugas {
     margin: 1%;
     color: white;
 }
-section .pelanggan {
+article section .petugas:hover {
+    cursor: pointer;
+}
+article section .pelanggan {
     width: 30%;
     height: auto;
     padding: 15px;
@@ -159,7 +158,10 @@ section .pelanggan {
     margin: 1%;
     color: white;
 }
-section .obat {
+article section .pelanggan:hover {
+    cursor: pointer;
+}
+article section .obat {
     width: 30%;
     height: auto;
     padding: 15px;
@@ -168,7 +170,10 @@ section .obat {
     margin: 1%;
     color: white;
 }
-section .transaksi {
+article section .obat:hover {
+    cursor: pointer;
+}
+article section .transaksi {
     width: 30%;
     height: auto;
     padding: 15px;
@@ -177,7 +182,10 @@ section .transaksi {
     margin: 1%;
     color: white;
 }
-section .absen {
+article section .transaksi:hover {
+    cursor: pointer;
+}
+article section .absen {
     width: 30%;
     height: auto;
     padding: 15px;
@@ -186,7 +194,10 @@ section .absen {
     margin: 1%;
     color: white;
 }
-section .mapel {
+article section .absen:hover {
+    cursor: pointer;
+}
+article section .mapel {
     width: 30%;
     height: auto;
     padding: 15px;
@@ -195,7 +206,10 @@ section .mapel {
     margin: 1%;
     color: white;
 }
-section .jadwal {
+article section .mapel:hover {
+    cursor: pointer;
+}
+article section .jadwal {
     width: 30%;
     height: auto;
     padding: 15px;
@@ -203,6 +217,21 @@ section .jadwal {
     background-color: rgb(112, 56, 90);
     margin: 1%;
     color: white;
+}
+article section .jadwal:hover {
+    cursor: pointer;
+}
+article section .sekarang {
+    width: 30%;
+    height: auto;
+    padding: 15px;
+    float: left;
+    background-color: rgb(32, 24, 102);
+    margin: 1%;
+    color: white;
+}
+article section .sekarang:hover {
+    cursor: pointer;
 }
 .tambah {
     padding: 10px 15px 10px 15px;
@@ -252,4 +281,133 @@ section .jadwal {
 }
 .filter:hover {
     text-decoration: underline;
+}
+footer {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    float: left;
+    background-color: rgb(45, 90, 128);
+    color: thistle;
+}
+footer p {
+    margin-top: 5px;
+}
+
+@media screen and (max-width:480px) {
+    body {
+        background-color: rgb(131, 132, 133);
+    }
+    .header1 {
+        display: none;
+    }
+    .header2 {
+        width: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        text-align: left;
+    }
+    .header2 h3 {
+        font-size: large !important;
+        margin: 0 1% 0 !important;
+        display: block;
+        float: left;
+    }
+    .header2 h4 {
+        margin: 0 !important;
+        font-size: large !important;
+        display: block;
+        float: left;
+    }
+    .header2 .user {
+        float: left;
+    }
+    aside {
+        position: fixed;
+        bottom: 0px;
+        left: 0px;
+        width: 100%;
+        height: 50px;
+        overflow: hidden;
+    }
+    aside ul {
+        width: 100%;
+    }
+    aside ul li {
+        float: left;
+        padding: 0;
+        margin: 0;
+        text-align: center;
+    }
+    aside ul li a {
+        padding: 5px 8px 5px 8px;
+        margin: 1%;
+        display: inline-flexbox;
+        border: 0;
+        text-align: center;
+	    font-size: large;
+    }
+    article {
+        margin: 51px 0;
+        width: 100%;
+        height: auto;
+        overflow: hidden;
+    }
+    article section {
+        height: auto;
+    }
+    .menu-teks {
+        display: none;
+    }
+    .header2 .ham {
+        display: none;
+    }
+    footer {
+        height: auto;
+        margin: 0 0 50px 0;
+        padding: 0;
+        float: left;
+    }
+    article section .pelanggan {
+        width: 100%;
+        margin: 3px;
+        padding: 0;
+    }
+    article section .petugas {
+        width: 100%;
+        margin: 3px;
+        padding: 0;
+    }
+    article section .transaksi {
+        width: 100%;
+        margin: 3px;
+        padding: 0;
+    }
+    article section .obat {
+        width: 100%;
+        margin: 3px;
+        padding: 0;
+    }
+    article section .mapel {
+        width: 100%;
+        margin: 3px;
+        padding: 0;
+    }
+    article section .jadwal {
+        width: 100%;
+        margin: 3px;
+        padding: 0;
+    }
+    article section .sekarang {
+        width: 100%;
+        margin: 3px;
+        padding: 0;
+    }
+    article section .absen {
+    width: 100%;
+    padding: 15px;
+    margin: 3px;
+}
+    
 }

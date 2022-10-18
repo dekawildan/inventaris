@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="login.css">
+    <link rel="manifest" href="manifest.json"/>
+    <link rel="shortcut icon" href="img/logorpl.png" type="image/png">
+    <link rel="apple-touch-icon" href="img/logorpl.png" type="image/png">
 </head>
 <body>
 
@@ -19,20 +22,9 @@
 
         <!-- Form login -->
         <form method="post" action="cek-login.php">
-            <table width="90%" border="0">
-                <tr>
-                    <td>Username</td>
-                    <td>: <input type="text" name="username" placeholder="Username..." autofocus required></td>
-                </tr>
-                <tr>
-                    <td>Password</td>
-                    <td>: <input type="password" name="password" placeholder="Password..." required></td>
-                </tr>
-                <tr>
-                    <td>&nbsp;</td>
-                    <td><button type="submit" name="masuk">Masuk</button></td>
-                </tr>
-            </table>
+                <input type="text" name="username" placeholder="Username..." autofocus required>
+                <input type="password" name="password" placeholder="Password..." required>
+                <button type="submit" name="masuk">Masuk</button>
         </form>
     </div>
 
@@ -41,5 +33,20 @@
         <p style="text-align: center;"><strong>Aplikasi Inventaris</strong></p>
     </div>
     
+    <script>
+            var BASE_URL = 'https://inventarisbhinus.000webhostapp.com/';
+            document.addEventListener('DOMContentLoaded', init, false);
+
+            function init() {
+                if ('serviceWorker' in navigator && navigator.onLine) {
+                    navigator.serviceWorker.register( BASE_URL + 'service-worker.js')
+                    .then((reg) => {
+                        console.log('Registrasi service worker Berhasil', reg);
+                    }, (err) => {
+                        console.error('Registrasi service worker Gagal', err);
+                    });
+                }
+            }
+</script>
 </body>
 </html>

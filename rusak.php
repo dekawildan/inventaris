@@ -10,6 +10,7 @@
     <title>Aplikasi Inventaris</title>
     <link href="select2.min.css" rel="stylesheet">
     <link href="desain.css" rel="stylesheet">
+    <link href="all.min.css" rel="stylesheet">
     <link href="bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
@@ -39,14 +40,14 @@
     <aside id="aside">
         <nav>
             <ul>
-                <li><a href="index.php">Dashboard</a></li>
-                <li><a href="jurusan.php">Jurusan</a></li>
-                <li><a href="ruang.php">Ruang</a></li>
-                <li><a href="barang.php">Barang</a></li>
-                <li><a href="rusak.php" class="aktif">Rusak</a></li>
-                <li><a href="agenda.php">Agenda Service</a></li>
-                <li><a href="laporan.php">Laporan</a></li>
-                <li><a href="logout.php">Keluar</a></li>
+                <li><a href="index.php"><span class="menu-icon"><i class="fas fa-home"></i></span> <span class="menu-teks">Dashboard</span></a></li>
+                <li><a href="jurusan.php"><span class="menu-icon"><i class="fas fa-users-cog"></i></span> <span class="menu-teks">Jurusan</span></a></li>
+                <li><a href="ruang.php"><span class="menu-icon"><i class="fas fa-sitemap"></i></span> <span class="menu-teks">Ruang</span></a></li>
+                <li><a href="barang.php"><span class="menu-icon"><i class="fas fa-toolbox"></i></span> <span class="menu-teks">Barang</span></a></li>
+                <li><a href="rusak.php" class="aktif"><span class="menu-icon"><i class="fas fa-tools"></i></span> <span class="menu-teks">Rusak</span></a></li>
+                <li><a href="agenda.php"><span class="menu-icon"><i class="fas fa-toolbox"></i></span> <span class="menu-teks">Agenda Service</span></a></li>
+                <li><a href="laporan.php"><span class="menu-icon"><i class="fas fa-list"></i></span> <span class="menu-teks">Laporan</span></a></li>
+                <li><a href="logout.php"><span class="menu-icon"><i class="fas fa-power-off"></i></span> <span class="menu-teks">Keluar</span></a></li>
             </ul>
         </nav>
     </aside>
@@ -59,6 +60,7 @@
                     <input type="text" name="cari_data" placeholder="Masukkan data yang dicari..." class="form-control" style="width:85%; float:left;" required>&nbsp;<button class="btn btn-primary" type="submit" name="cari">Cari</button>
                 </form>
             <p>&nbsp;
+                <div class="table-responsive">
                 <table class="table table_striped table-hover">
                     <thead>
                         <tr>
@@ -213,6 +215,7 @@
                         ?>
                     </tbody>
                 </table>
+                </div>
             </p>
         
         </section>
@@ -241,6 +244,7 @@
 
     <!-- Library Javascript -->
     <script src="jquery.min.js"></script>
+    <script src="all.min.js"></script>
     <script src="select2.min.js"></script>
     <script src="bootstrap.min.js"></script>
 </body>

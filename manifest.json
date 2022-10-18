@@ -1,7 +1,7 @@
 {
-    "name": "Aplikasi Skorsing Siswa",
-    "short_name": "Aplikasi Skorsing",
-    "description": "Aplikasi Skorsing Siswa by dekabhinus@gmail.com",
+    "name": "Aplikasi Inventaris Jurusan",
+    "short_name": "Aplikasi Inventaris",
+    "description": "Aplikasi Inventaris Jurusan by dekabhinus@gmail.com",
     "icons": [
       {
         "src": "img/logorpl32.png",
@@ -34,7 +34,7 @@
           "purpose": "any maskable"
       }
     ],
-    "start_url": "/skorsing/",
+    "start_url": "https://inventarisbhinus.000webhostapp.com/",
     "display": "fullscreen",
     "theme_color": "#f45",
     "background_color": "#fff"

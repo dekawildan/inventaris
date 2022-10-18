@@ -9,7 +9,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aplikasi Inventaris</title>
     <link href="desain.css" rel="stylesheet">
+    <link href="all.min.css" rel="stylesheet">
     <link href="bootstrap.min.css" rel="stylesheet">
+    <link rel="manifest" href="manifest.json"/>
+    <link rel="shortcut icon" href="img/logorpl.png" type="image/png">
+    <link rel="apple-touch-icon" href="img/logorpl.png" type="image/png">
 </head>
 <body>
 
@@ -38,14 +42,14 @@
     <aside id="aside">
         <nav>
             <ul>
-                <li><a href="index.php" class="aktif">Dashboard</a></li>
-                <li><a href="jurusan.php">Jurusan</a></li>
-                <li><a href="ruang.php">Ruang</a></li>
-                <li><a href="barang.php">Barang</a></li>
-                <li><a href="rusak.php">Rusak</a></li>
-                <li><a href="agenda.php">Agenda Service</a></li>
-                <li><a href="laporan.php">Laporan</a></li>
-                <li><a href="logout.php">Keluar</a></li>
+                <li><a href="index.php" class="aktif"><span class="menu-icon"><i class="fas fa-home"></i></span> <span class="menu-teks">Dashboard</span></a></li>
+                <li><a href="jurusan.php"><span class="menu-icon"><i class="fas fa-users-cog"></i></span> <span class="menu-teks">Jurusan</span></a></li>
+                <li><a href="ruang.php"><span class="menu-icon"><i class="fas fa-sitemap"></i></span> <span class="menu-teks">Ruang</span></a></li>
+                <li><a href="barang.php"><span class="menu-icon"><i class="fas fa-toolbox"></i></span> <span class="menu-teks">Barang</span></a></li>
+                <li><a href="rusak.php"><span class="menu-icon"><i class="fas fa-tools"></i></span> <span class="menu-teks">Rusak</span></a></li>
+                <li><a href="agenda.php"><span class="menu-icon"><i class="fas fa-toolbox"></i></span> <span class="menu-teks">Agenda Service</span></a></li>
+                <li><a href="laporan.php"><span class="menu-icon"><i class="fas fa-list"></i></span> <span class="menu-teks">Laporan</span></a></li>
+                <li><a href="logout.php"><span class="menu-icon"><i class="fas fa-power-off"></i></span> <span class="menu-teks">Keluar</span></a></li>
             </ul>
         </nav>
     </aside>
@@ -142,5 +146,24 @@
             document.getElementById("burger").style.display="none";
         }
     </script>
+    
+     <script>
+            var BASE_URL = 'https://inventarisbhinus.000webhostapp.com/';
+            document.addEventListener('DOMContentLoaded', init, false);
+
+            function init() {
+                if ('serviceWorker' in navigator && navigator.onLine) {
+                    navigator.serviceWorker.register( BASE_URL + 'service-worker.js')
+                    .then((reg) => {
+                        console.log('Registrasi service worker Berhasil', reg);
+                    }, (err) => {
+                        console.error('Registrasi service worker Gagal', err);
+                    });
+                }
+            }
+</script>
+
+    <script src="jquery.min.js"></script>
+    <script src="all.min.js"></script>
 </body>
 </html>
